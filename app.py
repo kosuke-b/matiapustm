@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key=st.secrets["AIzaSyDmQGP19c5NIfC_Hcbu6dBQo6_4tJ1U9TU"])
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def generate_reply_from_profile(profile_text):
